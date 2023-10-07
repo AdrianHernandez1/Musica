@@ -10,14 +10,14 @@
           <div class="row">
             <div class="col-12 pt-2 px-5 mb-4">
               <label for="txtUsuario"><b>Usuario:</b></label>
-              <input class="form-control" type="text" style="border-radius: 15px;"/>
+              <input class="form-control" type="text" style="border-radius: 15px;" [(ngModel)]="strUsuario"/>
             </div>
             <div class="col-12 pt-2 px-5 mb-4">
               <label for="txtContrasenia"><b>Contraseña:</b></label>
-              <input class="form-control" type="text" style="border-radius: 15px;"/>
+              <input class="form-control" type="text" style="border-radius: 15px;" [(ngModel)]="strContrasenia"/>
             </div>
             <div class="col-12 pt-2 px-5 mb-4 text-center">
-              <button type="button" class="btn btn-light" style="width: 200px; border-radius: 15px; background-color: gray; border: none;"><b class="text-white">INGRESAR</b></button>
+              <button type="button" class="btn btn-light" (click)="irInicio()" style="width: 200px; border-radius: 15px; background-color: gray; border: none;"><b class="text-white">INGRESAR</b></button>
             </div>
             <div class="col-12 text-center">
               <span class="fw-bold"><a (click)="irRegistrarse()" type="submit">No tienes cuenta. Registrate aqui.</a></span>

@@ -1,0 +1,15 @@
+.img-fondo-artista{
+    background-image: url('/assets/img/imgFondoA.png');
+    background-size: cover;
+    
+}
+
+.imagen-artista{
+    width: 500px;
+	height: 450px;
+	object-fit: cover;
+}
+
+.btn{
+        background-color: rgba(253, 247, 247, 0.681);
+}

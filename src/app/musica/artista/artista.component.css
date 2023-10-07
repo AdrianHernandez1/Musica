@@ -1,0 +1,26 @@
+.img-artista {
+    background-image: url('/assets/img/imgFondoArtista.png');
+    background-size: cover;
+}
+
+
+th {
+    background-color: rgba(253, 247, 247, 0.681) !important;
+    
+}
+
+td{
+    background-color: rgba(253, 247, 247, 0.681) !important;
+    
+}
+
+.img-normalizada{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.card {
+    background-color: rgba(253, 247, 247, 0.681) !important;
+    
+}

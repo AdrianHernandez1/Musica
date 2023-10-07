@@ -1,0 +1,43 @@
+<div class="row m-0 col-0 vh-100">
+    <div class="col-12 img-fondo-artista">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4">
+                <span class="btn" (click)="usuario()" style="color: white; font-size: 20px; margin-left: 20px;"><b><i class="fa fa-user-circle-o "  aria-hidden="true"></i>
+                    Adrian Hernandez</b></span>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-end mt-4">
+                <button type="button" class="btn btn-ligh" (click)="regresar()" style="background-color: #D9D9D9; width: 150px; margin-right: 20px;"><b>Regresar</b></button>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6  p-5">
+                    <div class="display-4 fw-bold lh-1 mb-2 text-center">
+                        <img class="card-title display-4 mt-2 fw-bold lh-1  text-center imagen-artista"
+                            src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F05%2Fthe-weeknd-confirms-end-of-after-hours-0.jpg?w=960&cbr=1&q=90&fit=max">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4" *ngFor="let artista of arrayArtista">
+                    <div class="row">
+                        <div class="col-12 text-center mt-4">
+                            <h1 class="text-white"><b>{{artista.nombre}}</b></h1>
+                        </div>
+                        <div class="col-12 mt-4" style="text-align: justify;">
+                            <h5 class="text-white"><b>Genero: </b>{{artista.genero}}</h5>
+                        </div>
+                        <div class="col-12 mt-4" style="text-align: justify;">
+                            <h5 class="text-white"><b>Reproducciones: </b>{{artista.reproducciones}}</h5>
+                        </div>
+                        <div class="col-12 mt-4" style="text-align: justify;">
+                            <h5 class="text-white"><b>Información:<br> </b>{{artista.informacion}}</h5>
+                        </div>
+                        <div class="col-12 mt-4" style="text-align: justify;">
+                            <h5 class="text-white"><b>Canciones mas populares:<br> </b>{{artista.cancion1}}<br>{{artista.cancion2}}<br>{{artista.cancion3}}</h5>
+                        </div>
+                        <div class="col-12 text-center mt-4">
+                            <button type="button" class="btn btn-ligh" (click)="descrubrirMusica()"><b>Descubrir su musica</b></button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

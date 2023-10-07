@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { ArtistaService } from 'src/app/servicios/artista.service';
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css'],
-  providers: [],
+  selector: 'app-genero',
+  templateUrl: './genero.component.html',
+  styleUrls: ['./genero.component.css']
 })
-export class InicioComponent {
+export class GeneroComponent {
   arrayGenero: any[] = new Array();
   arrayArtista: any[] = new Array();
   arrayCanciones: any[] = new Array();
@@ -32,13 +31,10 @@ export class InicioComponent {
     console.log(cancion)
   }
 
-  irGenero(){
-    this._router.navigateByUrl('genero');
+  regresar(){
+    this._router.navigateByUrl('inicio');
   }
 
-  irInfoArtista(){
-    this._router.navigateByUrl('infoArtista');
-  }
 
   usuario(){
     this._router.navigateByUrl('usuario');

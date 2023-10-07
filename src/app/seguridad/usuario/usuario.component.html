@@ -1,0 +1,45 @@
+<div class="row m-0 col-0 vh-100">
+    <div class="col-12 img-usuario">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-end mt-4">
+                <button type="button" class="btn btn-ligh" (click)="regresar()" style="background-color: #D9D9D9; width: 150px; margin-right: 20px;"><b>Regresar</b></button>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-end mt-4">
+                <div class="d-flex justify-content-center align-items-center">
+                    <h1 class="text-white" style="font-size: 160px;"><b>A<br>H</b></h1>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 text-center mt-5">
+                <div class="d-flex justify-content-center align-items-center mt-5">
+                    <div class="row">
+                        <div class="col-4 px-4 mb-3">
+                            <label for="txtNombre" class="text-white"><b>Nombre:</b></label>
+                            <input class="form-control" type="text" style="border-radius: 15px;" [(ngModel)]="strNombre" />
+                        </div>
+                        <div class="col-4 px-4 mb-3">
+                            <label for="txtApellidoPaterno" class="text-white"><b>Apellido Paterno:</b></label>
+                            <input class="form-control" type="text" style="border-radius: 15px;"  [(ngModel)]="strApellidoP" />
+                        </div>
+                        <div class="col-4 px-4 mb-3">
+                            <label for="txtApellidoMaterno" class="text-white"><b>Apellido Materno:</b></label>
+                            <input class="form-control" type="text" style="border-radius: 15px;"  [(ngModel)]="strApellidoM" />
+                        </div>
+                        <div class="col-6 px-4 mb-3 mt-4">
+                            <label for="txtUsuario" class="text-white"><b>Usuario:</b></label>
+                            <input class="form-control" type="text" style="border-radius: 15px;"  [(ngModel)]="strUsuario" />
+                          </div>
+                        <div class="col-6 px-4 mb-3 mt-4">
+                            <label for="txtContrasenia" class="text-white"><b>Contraseña:</b></label>
+                            <input class="form-control" type="password" style="border-radius: 15px;"  [(ngModel)]="strContrasenia"  />
+                        </div>
+                        <div class="col-12 mt-5 pt-2 px-5 mb-4 text-center">
+                            <button type="button" class="btn btn-light mt-4"  (click)="guardar()"
+                                style="width: 200px; border-radius: 15px; background-color: gray; border: none;"><b
+                                    class="text-white">ACTUALIZAR</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

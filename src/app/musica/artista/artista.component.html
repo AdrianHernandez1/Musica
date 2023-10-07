@@ -1,0 +1,74 @@
+<div class="row m-0 col-0 vh-100">
+    <div class="col-12 img-artista">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4">
+                <span class="btn" (click)="usuario()" style="color: white; font-size: 20px; margin-left: 20px;"><b><i class="fa fa-user-circle-o "  aria-hidden="true"></i>
+                    Adrian Hernandez</b></span>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-end mt-4">
+                <button type="button" class="btn btn-ligh" (click)="regresar()" style="background-color: #D9D9D9; width: 150px; margin-right: 20px;"><b>Regresar</b></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-4">
+                <h2 class="text-white"><b>En reproducci&oacute;n</b></h2>
+            </div>
+            <div class="col-12">
+                <div class="row mx-auto p-3">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" *ngFor="let artista of arrayArtista">
+                        <div class="card w-100 mt-1" style="border-radius: 10px;">
+                            <div class="card-body">
+                                <div class="card-title display-4 fw-bold lh-1 mb-2 text-center">
+                                    <img class="card-title display-4 mt-2 fw-bold lh-1 mb-5 text-center img-normalizada"
+                                        src="{{artista.urlImagen}}" style="border-radius: 10px;">
+                                </div>
+                                <h5 class="fw-bold lh-1 text-start" style="margin-top: -40px;"><b>{{artista.artista}} : {{artista.nombreCancion}}</b>
+                                </h5>
+                                <br>
+                                <div class="container-fluid">
+                                    <input type="range" class="form-range" id="customRange1">
+                                </div>
+                                <div class="container-fluid text-center mt-3">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <i class="fa fa-backward" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fa fa-play" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-4">
+                                            <i class="fa fa-forward" aria-hidden="true"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 m-0 col-0 vh-100">
+                        <div style="overflow-y: scroll; max-height: 520px;">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col-6">Canción</th>
+                                  <th scope="col-4">Artista</th>
+                                  <th scope="col-2">Duración</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr *ngFor="let cancion of arrayCanciones">
+                                  <td>{{cancion.nombreCancion}}</td>
+                                  <td>{{cancion.artista}}</td>
+                                  <td>{{cancion.duracionDeCancion}}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
