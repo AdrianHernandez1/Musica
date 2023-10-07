@@ -1,0 +1,9 @@
+.img-inicioSesion {
+    background-image: url('/assets/img/imgInicioSesion.png');
+    background-size: cover;
+}
+
+.card {
+    background-color: rgba(253, 247, 247, 0.681) !important;
+    
+}
